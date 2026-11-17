@@ -15,22 +15,23 @@ tipica-barbearia/
 ├── index.html        Página completa (HTML, CSS e um pequeno script)
 ├── vercel.json       Configuração de cache das imagens na Vercel
 ├── README.md
-└── assets/
-    ├── logo.png            Logo com fundo transparente (cabeçalho e rodapé)
-    ├── favicon.png         Ícone da aba do navegador
-    ├── og.jpg              Imagem de prévia ao compartilhar o link (1200x630)
-    ├── hero-primo.webp     Foto principal (abertura)
-    ├── salao-cadeira.webp  Galeria "Barbearia raiz"
-    ├── parede-sofa.webp    Galeria "Barbearia raiz"
-    ├── ferramentas.webp    Galeria "Barbearia raiz"
-    ├── cantinho.webp       Galeria "Barbearia raiz"
-    ├── painel-estilos.webp Seção "Não sabe o que pedir?"
-    ├── catalogo.webp       Seção "Não sabe o que pedir?" (foto menor sobreposta)
-    ├── cera-matte.webp     Produtos
-    ├── cera-brilho.webp    Produtos
-    ├── gel-cera.webp       Produtos
-    ├── open-balm.webp      Produtos
-    └── interior.webp       Seção "Onde estamos"
+│
+│   Imagens (todas na raiz, junto do index.html):
+├── logo.png            Logo com fundo transparente (cabeçalho e rodapé)
+├── favicon.png         Ícone da aba do navegador
+├── og.jpg              Imagem de prévia ao compartilhar o link (1200x630)
+├── hero-primo.webp     Foto principal (abertura)
+├── salao-cadeira.webp  Galeria "Barbearia raiz"
+├── parede-sofa.webp    Galeria "Barbearia raiz"
+├── ferramentas.webp    Galeria "Barbearia raiz"
+├── cantinho.webp       Galeria "Barbearia raiz"
+├── painel-estilos.webp Seção "Não sabe o que pedir?"
+├── catalogo.webp       Seção "Não sabe o que pedir?" (foto menor sobreposta)
+├── cera-matte.webp     Produtos
+├── cera-brilho.webp    Produtos
+├── gel-cera.webp       Produtos
+├── open-balm.webp      Produtos
+└── interior.webp       Seção "Onde estamos"
 ```
 
 ## Publicar na Vercel
@@ -48,13 +49,13 @@ A cada novo commit na branch principal, a Vercel publica a versão nova sozinha.
 O WhatsApp e o Instagram só mostram a prévia se a imagem tiver endereço completo. No `index.html`, troque:
 
 ```html
-<meta property="og:image" content="assets/og.jpg">
+<meta property="og:image" content="og.jpg">
 ```
 
 pelo endereço final do site, por exemplo:
 
 ```html
-<meta property="og:image" content="https://tipica-barbearia.vercel.app/assets/og.jpg">
+<meta property="og:image" content="https://tipica-barbearia.vercel.app/og.jpg">
 ```
 
 ### Domínio próprio
@@ -62,7 +63,7 @@ Na Vercel: **Settings > Domains**. A própria Vercel mostra os registros DNS que
 
 ## Como trocar uma foto
 
-1. Substitua o arquivo dentro de `assets/` **mantendo o mesmo nome**.
+1. Substitua o arquivo de imagem na raiz do repositório **mantendo o mesmo nome**.
 2. Prefira fotos verticais, com cerca de 1000 a 1400 px no lado maior.
 3. Formato recomendado: `.webp` (mais leve). Para converter um JPG: [squoosh.app](https://squoosh.app).
 4. Se usar outro nome ou formato, atualize o `src` correspondente no `index.html`.
@@ -80,6 +81,7 @@ Tudo está no `index.html`:
 ## Detalhes técnicos
 
 - Fontes: Bodoni Moda (títulos) e Manrope (texto), via Google Fonts.
+- Também funciona no GitHub Pages, sem nenhuma configuração extra.
 - Ícones: Phosphor Icons, embutidos como SVG.
 - O dia atual é destacado automaticamente na faixa de horários.
 - As animações de entrada respeitam a configuração de movimento reduzido do sistema.
