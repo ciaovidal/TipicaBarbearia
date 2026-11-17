@@ -125,8 +125,8 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opa
 
 /* Catalog split */
 .cat .wrap{display:grid;grid-template-columns:1fr 1fr;gap:96px;align-items:center}
-.cat-media{position:relative;padding-bottom:70px;padding-right:90px}
-.cat-media .main{width:100%;aspect-ratio:4/4.4;object-fit:cover;object-position:50% 55%}
+.cat-media{position:relative}
+.cat-media .main{width:100%;aspect-ratio:4/4.6;object-fit:cover;object-position:50% 62%}
 .cat-media .over{position:absolute;right:0;bottom:0;width:46%;aspect-ratio:3/4;object-fit:cover;border:6px solid var(--bg);box-shadow:0 30px 60px rgba(0,0,0,.45)}
 .ticks{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;max-width:440px}
 .ticks li{list-style:none;display:flex;gap:10px;align-items:center;font-weight:500;font-size:15.5px}
@@ -213,7 +213,6 @@ footer img{height:56px;width:auto}
   .c-txt{grid-column:1 / -1;grid-row:1;padding:28px}
   .c-d{grid-column:auto}
   .cat .wrap{grid-template-columns:1fr;gap:44px}
-  .cat-media{padding-right:60px;padding-bottom:56px}
   .ticks{grid-template-columns:1fr}
   .prod-row{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -20px;padding:0 20px 8px;scrollbar-width:none}
   .prod-row::-webkit-scrollbar{display:none}
@@ -320,14 +319,14 @@ footer img{height:56px;width:auto}
   <section class="sec" id="espaco" style="padding-top:0">
     <div class="wrap">
       <div class="space-grid">
-        <figure class="c-a rv"><img src="salao-cadeira.webp" alt="Cadeira de barbeiro clássica e parede decorada" loading="lazy" width="720" height="1280"></figure>
+        <figure class="c-a rv"><img src="salao-cadeira.webp" alt="Cadeira de barbeiro clássica e a fileira de bancadas do salão" loading="lazy" width="720" height="1280"></figure>
         <div class="c-txt rv" style="--i:1">
           <h2 class="h2">Barbearia <em>raiz.</em></h2>
           <p class="body">Cadeira clássica, sofá de couro pra esperar a vez e uma parede cheia de história. Sem frescura.</p>
         </div>
-        <figure class="c-d rv" style="--i:2"><img src="parede-sofa.webp" alt="Sofá capitonê preto e parede com quadros e placas antigas" loading="lazy" width="720" height="1280"></figure>
+        <figure class="c-d rv" style="--i:2"><img src="parede-sofa.webp" alt="Sofá capitonê preto e parede com certificados e placas antigas" loading="lazy" width="960" height="1280"></figure>
         <figure class="c-b rv" style="--i:1"><img src="ferramentas.webp" alt="Tesouras, pente e escova na bancada" loading="lazy" width="960" height="1280"></figure>
-        <figure class="c-c rv" style="--i:2"><img src="cantinho.webp" alt="Cantinho com banquetas, barril da Típica e cachecóis de futebol" loading="lazy" width="720" height="1280" style="object-position:50% 70%"></figure>
+        <figure class="c-c rv" style="--i:2"><img src="cantinho.webp" alt="Prateleira com câmeras antigas e cachecóis de futebol" loading="lazy" width="960" height="1280" style="object-position:50% 40%"></figure>
       </div>
     </div>
   </section>
@@ -335,8 +334,7 @@ footer img{height:56px;width:auto}
   <section class="sec cat" style="padding-top:0">
     <div class="wrap">
       <div class="cat-media rv">
-        <img class="main" src="painel-estilos.webp" alt="Painel com fotos de estilos de corte e barba" loading="lazy" width="720" height="1280">
-        <img class="over" src="catalogo.webp" alt="Catálogo de estilos da Típica" loading="lazy" width="720" height="1280">
+        <img class="main" src="painel-estilos.webp" alt="Catálogo de estilos com cortes, barbas e cortes infantis" loading="lazy" width="960" height="1280">
       </div>
       <div class="rv" style="--i:1">
         <h2 class="h2">Não sabe <em>o que pedir?</em></h2>
@@ -382,7 +380,7 @@ footer img{height:56px;width:auto}
         </div>
       </div>
       <div class="loc-media rv" style="--i:1">
-        <img src="interior.webp" alt="Salão da Típica com barbeiro atendendo um cliente" loading="lazy" width="720" height="1280">
+        <img src="interior.webp" alt="Salão da Típica com a fileira de cadeiras de barbeiro" loading="lazy" width="720" height="1280">
       </div>
     </div>
   </section>
